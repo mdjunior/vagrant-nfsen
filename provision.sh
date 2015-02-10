@@ -64,6 +64,7 @@ fi
 
 #  Change the apache configuration for nfsen
 sudo sed -i "s/DocumentRoot.*/DocumentRoot \/var\/www/" /etc/apache2/sites-enabled/000-default.conf
+sudo service apache2 restart
 
 #  Restarting nfsen
 /data/nfsen/bin/nfsen stop

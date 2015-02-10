@@ -7,6 +7,7 @@ Vagrant::Config.run do |config|
 
   config.vm.box = "ubuntu/trusty64"
   config.vm.forward_port 80, 8080
+  config.vm.forward_port 9995, 9995
 
   config.vm.share_folder "v-data", "/vagrant_data", "data"
   

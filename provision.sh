@@ -1,6 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 perl -pi -e "s/br/us/" /etc/apt/sources.list
+
 
 apt-get update
 apt-get upgrade -y

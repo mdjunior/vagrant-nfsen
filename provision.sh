@@ -37,10 +37,10 @@ fi
 
 #  Checking files, and downloading if they do not exist
 if [ ! -e nfsen.tar.gz ] ; then
-    wget -q http://sourceforge.net/projects/nfsen/files/stable/nfsen-1.3.7/nfsen-1.3.7.tar.gz/download -k -O nfsen.tar.gz
-    wget -q http://sourceforge.net/projects/nfsen/files/stable/nfsen-1.3.7/nfsen-1.3.7.tar.gz.sig/download -k -O nfsen.tar.gz.sig
+    wget -q http://sourceforge.net/projects/nfsen/files/stable/nfsen-1.3.6p1/nfsen-1.3.6p1.tar.gz/download -k -O nfsen.tar.gz
+    wget -q http://sourceforge.net/projects/nfsen/files/stable/nfsen-1.3.6p1/nfsen-1.3.6p1.tar.gz.sig/download -k -O nfsen.tar.gz.sig
 
-    gpg --keyserver pgp.mit.edu --recv-key EDE80DF6
+    gpg --keyserver pgp.mit.edu --recv-key 402CDAFF
     gpg --verify nfsen.tar.gz.sig
     if [ "$?" != "0" ] ; then
         echo "=> Signature not match!"

@@ -28,6 +28,6 @@ Vagrant::Config.run do |config|
 
   config.vm.share_folder "v-data", "/vagrant_data", "data"
   
-  config.vm.provision :shell, :path => "provision.sh"
+  config.vm.provision :shell, :path => "nfsen.sh"
 
 end
